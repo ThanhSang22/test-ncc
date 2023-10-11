@@ -8,7 +8,9 @@ import url from "../../assets/url-icon.png";
 const Content = ({ className }) => {
   return (
     <div className={`${className} content-component`}>
-      <img src={logo} />
+      <div className="content-logo">
+        <img src={logo} />
+      </div>
       <div className="content-main">
         <h3>Lorem ipsum dolor sit asmet?</h3>
         <p>
@@ -25,7 +27,7 @@ const Content = ({ className }) => {
       </div>
       <div className="content-list">
         <div className="content-list-item">
-          <p>Lorem ipsum dolor sit asmet</p>
+          <h3>Lorem ipsum dolor sit asmet</h3>
           <div className="item-img">
             <img src={css} alt="#" />
             <p>
@@ -44,7 +46,7 @@ const Content = ({ className }) => {
           </p>
         </div>
         <div className="content-list-item">
-          <p>Lorem ipsum dolor sit asmet</p>
+          <h3>Lorem ipsum dolor sit asmet</h3>
           <div className="item-img">
             <img src={html} alt="#" />
             <p>
@@ -63,7 +65,7 @@ const Content = ({ className }) => {
           </p>
         </div>
         <div className="content-list-item">
-          <p>Lorem ipsum dolor sit asmet</p>
+          <h3>Lorem ipsum dolor sit asmet</h3>
           <div className="item-img">
             <img src={url} alt="#" />
             <p>
@@ -82,8 +84,6 @@ const Content = ({ className }) => {
           </p>
         </div>
       </div>
-      <hr />
-      <footer>Copyright © 2021</footer>
     </div>
   );
 };

@@ -6,7 +6,10 @@ function App() {
   return (
     <div className="App">
       <Navbar className="navbar" />
-      <Content className="content" />
+      <div className="content">
+        <Content />
+        <div className="footer">Copyright © 2021</div>
+      </div>
     </div>
   );
 }
